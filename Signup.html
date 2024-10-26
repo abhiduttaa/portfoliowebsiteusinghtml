@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REG Form</title>
+    <link rel="shortcut icon" href="IMG/apple-touch-icon.png" type="image/x-icon">
+    <style>
+        /* td,tr{
+            text-align: left;
+            align-items: left;
+        } */
+         table{
+            margin: 20px 0px;
+         }
+        .right{
+            text-align: right;
+            margin-right: 20px;
+            padding-right: 8px;
+            font-size: 25px;
+         }
+         fieldset{
+          width: 60%;
+          border-radius: 10px;
+          box-shadow: 0px 0px 15px rgb(138, 138, 138);
+          margin-top: 50px;
+         }
+         button{
+            padding: 8px;
+            background-color: rgb(186, 72, 231);
+            color: antiquewhite;
+            cursor: pointer;
+            border-radius: 8px;
+         }
+         h1{
+           color:rgb(186, 72, 231);
+           text-shadow: 0px 0px 10px rgba(246, 9, 246, 0.21);
+         }
+         input{
+          font-size: 20px;
+         }
+         *{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Registation Form</h1>
+      <form id="signuppage">
+        <fieldset>
+            <table>
+                <tr >
+                  <td class="right">Enter Name</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="Name"
+                      id="Name"
+                      placeholder="Enter Your Name"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="right">Enter Address</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="Address"
+                      id="Address"
+                      placeholder="Enter Your Address"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="right">Gender</td>
+                  <td>
+                    <input type="radio" name="Gender" id="Gender" value="Male" />Male
+                    <input
+                      type="radio"
+                      name="Gender"
+                      id="Gender"
+                      value="FeMale"
+                    />Female
+                  </td>
+                </tr>
+                <tr>
+                  <td class="right">City</td>
+                  <td>
+                    <select name="city" id="city">
+                      <option value="Santipur">Santipur</option>
+                      <option value="Kanchrapara">Kanchrapara</option>
+                      <option value="kalyani">kalyani</option>
+                      <option value="Fulia">Fulia</option>
+                      <option value="Ranaghat">Ranaghat</option>
+                      <option value="Kolkata-North">Kolkata-North</option>
+                      <option value="Kolkata-south">Kolkata-south</option>
+                      <option value="Kolkata-Center">Kolkata-Center</option>
+                      <option value="Madanpur">Madanpur</option>
+                      <option value="Chakadhaha">Chakadha</option>
+                      <option value="Santipur">Santipur</option>
+                      <option value="Santipur">Santipur</option>
+                      <option value="Santipur">Santipur</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="right">Pin</td>
+                  <td><input type="number" name="pin" id="pin" /></td>
+                </tr>
+                <tr>
+                  <td class="right">Language</td>
+                  <td>
+                    <input type="checkbox" name="Check" id="Check" />Hindi
+                    <input type="checkbox" name="Check" id="Check" />Bengali
+                    <input type="checkbox" name="Check" id="Check" />English
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <button id="btnsignup">Submit</button>
+        </fieldset>
+      </form>
+      
+      
+    </center>
+    <script src="signup.js"></script>
+  </body>
+</html>

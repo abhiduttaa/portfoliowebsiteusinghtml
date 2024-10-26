@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="shortcut icon"
+      href="IMG/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <style>
+      tr,
+      td {
+        /* margin-bottom: 20px; */
+        padding-bottom: px;
+      }
+      input {
+        border-radius: 5px;
+        padding: 8px;
+      }
+      button {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: rgb(186, 72, 231);
+        color: antiquewhite;
+        cursor: pointer;
+      }
+      h1 {
+        color: rgb(186, 72, 231);
+        text-shadow: 0px 0px 10px rgba(246, 9, 246, 0.21);
+      }
+      fieldset {
+        width: 40%;
+        /* height: 40vh; */
+        padding-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgb(138, 138, 138);
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Login</h1>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"> -->
+    <center>
+      <h1>Login</h1>
+      <form id="loginpage">
+        <fieldset>
+          <table border="0">
+            <tr>
+              <td><h2>Username</h2></td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Enter Your Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><h2>Password</h2></td>
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Your Password"
+                />
+              </td>
+            </tr>
+            <!-- <tr align="center">
+                <td><input type="submit" value="Submit"></td>
+            </tr> -->
+          </table>
+          <br />
+          <button id="btn">Submit</button>
+        </fieldset>
+      </form>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
